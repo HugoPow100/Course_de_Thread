@@ -534,42 +534,42 @@ sleep(random.nextInt(50) + 20); // Entre 20 et 70 ms
 
 ---
 
-## 📚 Points d'Apprentissage du Cours
+## Points d'Apprentissage vue en Cours
 
 Cette application illustre **tous** les concepts du cours sur les threads :
 
-### ✅ Création de threads
+### Création de threads
 - Extension de la classe `Thread`
 - Implémentation de la méthode `run()`
 - Appel de `start()` (jamais `run()` directement !)
 
-### ✅ Cycle de vie des threads
+### Cycle de vie des threads
 - **NEW** : Après `new Coureur()`
 - **RUNNABLE** : Après `start()`
 - **TIMED_WAITING** : Pendant `sleep()`
 - **TERMINATED** : Fin de `run()`
 
-### ✅ Méthodes importantes
+### Méthodes importantes
 - `start()` : Lance le thread
 - `run()` : Code exécuté par le thread
 - `sleep(ms)` : Met en pause le thread
 - `interrupt()` : Interrompt le thread
 - `join()` : Attend la fin du thread
 
-### ✅ Synchronisation
+### Synchronisation
 - Mot-clé `synchronized` sur `coureurTermine()`
 - Évite les problèmes de concurrence
 
-### ✅ Gestion de plusieurs threads
-- 8 threads s'exécutent en parallèle
+### Gestion de plusieurs threads
+- 10 threads s'exécutent en parallèle
 - Chacun avance indépendamment
 - Coordination via le modèle
 
-### ✅ Architecture MVC
+### Architecture MVC
 - Séparation claire Modèle / Vue / Contrôleur
 - Découplage via interfaces
 
-### ✅ Pattern Observateur
+### Pattern Observateur
 - Communication Modèle → Vue sans couplage
 - Permet plusieurs vues simultanées
 
